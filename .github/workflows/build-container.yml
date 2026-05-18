@@ -1,6 +1,10 @@
 name: Build containers (deploy)
 
-permissions: {}
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write
 
 on:
   workflow_dispatch:
